@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 
 <h1>Inside block</h1>
+<img src="{% static 'my_app/django.jpg' %}" >
 
 {% endblock content %}
