@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <h1>Example HTML template connected</h1>
-    <h1> <a href="{% url 'my_app:variable' %}"">click me to go to variable </a> </h1>
-    {% comment %} 
-    site level url name don't specify any name
-    <h1> <a href="{% url 'variable' %}"">click me to go to variable </a> </h1>
-    {% endcomment %}
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Inside block</h1>
+
+{% endblock content %}
