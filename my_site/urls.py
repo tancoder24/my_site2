@@ -22,4 +22,5 @@ urlpatterns = [
 
 ]
 
+# below way or other could be simply renaming error_view.html to 404.html
 handler404 = 'my_site.views.my_custom_page_not_found_view'
