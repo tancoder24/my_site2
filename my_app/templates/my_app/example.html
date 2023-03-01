@@ -10,5 +10,10 @@
 </head>
 <body>
     <h1>Example HTML template connected</h1>
+    <h1> <a href="{% url 'my_app:variable' %}"">click me to go to variable </a> </h1>
+    {% comment %} 
+    site level url name don't specify any name
+    <h1> <a href="{% url 'variable' %}"">click me to go to variable </a> </h1>
+    {% endcomment %}
 </body>
 </html>

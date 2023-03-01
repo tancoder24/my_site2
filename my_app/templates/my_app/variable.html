@@ -10,9 +10,13 @@
 </head>
 <body>
     <h1>Variable html</h1>
-    <h2>{{ first_name | length}} {{last_name}}</h2>
+    {% comment %} <h2>{{ first_name | length}} {{last_name}}</h2>
     {{some_dict.some_key}}
-    {{some_list.0}}
+    {{some_list.0}} {% endcomment %}
+
+    {% for item in some_list %}
+        {{item}}
+    {% endfor %} 
 
     {# This is a comment #}
 </body>
